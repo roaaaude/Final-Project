@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+.profile-picture-box, #about .profile-picture-box {
+  margin: auto 50px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: url("../../images/profile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.profile-picture-box img, #about .profile-picture-box img {
+  width: 100%;
+}
+
+@keyframes dot1_ {
+  3%, 97% {
+    width: 160px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -80px;
+  }
+  30%, 36% {
+    width: 80px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -40px;
+  }
+  63%, 69% {
+    width: 40px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -20px;
+  }
+}
+@keyframes dot2_ {
+  3%, 97% {
+    height: 90px;
+    width: 150px;
+    margin-left: -75px;
+    margin-top: -45px;
+  }
+  30%, 36% {
+    width: 70px;
+    height: 96px;
+    margin-left: -35px;
+    margin-top: -48px;
+  }
+  63%, 69% {
+    width: 32px;
+    height: 60px;
+    margin-left: -16px;
+    margin-top: -30px;
+  }
+}
+
+.button, #about .title-container .read-more-button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.15s ease;
+}
+
+.button::before, #about .title-container .read-more-button::before,
+.button::after,
+#about .title-container .read-more-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  transition: all 0.15s ease;
+}
+
+.button_lg {
+  position: relative;
+  padding: 10px 20px;
+  color: #6ee012;
+  background-color: #2f312f;
+  overflow: hidden;
+}
+
+
+#main-section {
+  font-family: "Heebo", sans-serif;
+  min-height: 90vh; /* Changed from fixed height to minimum height for flexibility */
+  background: radial-gradient(circle, #a3f36a 10%, #b0c4de 90%), linear-gradient(to top, #8a9ba8, #b0c4de);
+  background-blend-mode: multiply, luminosity;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #333;
+}
+
+#main-section .main-title-box .description {
+  font-size: 1.5em; /* Scaled down for subtlety */
+  line-height: 1.4; /* Improved line spacing for readability */
+  max-width: 800px; /* Max width for better control of text line length */
+  text-shadow: 1px 1px 2px #6a7a8c; /* Added subtle text shadow for depth */
+}
+
+/* Aesthetic details */
+#main-section .main-title-box .highlight {
+  font-size: 1.8em;
+  color: #73f879; /* A softer tone for highlighted text */
+  padding: 5px; /* Padding for highlight effect */
+  border-radius: 5px; /* Rounded corners for highlight */
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background for emphasis */
+}
+
+.back-to-top {
+  width: 50px;
+  height: 150px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.back-to-top ::before {
+  content: "top";
+  color: #2cde00;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #0dff00;
+  text-shadow: 0px 0px 12px rgba(12, 118, 255, 0.905);
+}
+
+
+#skills {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 8px 9px rgba(255, 255, 255, 0.6392156863);
+  background: rgb(108, 117, 125);
+}
+#skills img {
+  height: 6vh;
+}
+
+#about {
+  font-family: "Heebo", sans-serif;
+  padding: 100px 20px;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 5px solid #43312f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #131613;
+  font-style: normal;
+  color: #44a170;
+}
+#about .profile-picture-box {
+  margin: 50px auto;
+  width: 150px;
+  height: 150px;
+}
+#about .title-container {
+  margin: 0 auto;
+  padding: 5px;
+}
+#about .title-container .title {
+  font-size: 3rem;
+  font-weight: 900;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 992px) {
+  #about .title-container .title {
+    font-size: 2.2em;
+  }
+  #about .title-container .description {
+    width: 100%;
+    padding: 0;
+    margin: 50px auto;
+  }
+  #about img {
+    width: 80%;
+  }
+}
+@media (max-width: 375px) {
+  #about .profile-picture-box {
+    width: 90px;
+    height: 90px;
+  }
+  #about .title-container {
+    width: 100%;
+  }
+  #about .title-container .title {
+    font-size: 2em;
+  }
+  #about .title-container .description {
+    width: 80%;
+    font-size: 1em;
+    padding: 0;
+    margin: 50px auto;
+  }
+}
+#projects {
+  width: 100%;
+  text-align: center;
+  background: #e0e0e0;
+  color: #000;
+}
+#projects .content .title {
+  padding: 100px 0px;
+  font-size: 3rem;
+  font-weight: 900;
+  box-shadow: 0px 4px 20px #ffffff;
+}
+#projects .content .description {
+  width: 80%;
+  margin: 50px auto;
+  font-size: 1.2em;
+}
+
+div.card1 {
+  border-radius: 30px;
+  background: lightgrey;
+  transition: all 0.6s ease-in-out;
+}
+div.card1 > img {
+  width: 100%;
+  border-radius: 11px 11px 0px 0px;
+  margin: 9px auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+div.card1 .card-body .button, div.card1 .card-body #about .title-container .read-more-button, #about .title-container div.card1 .card-body .read-more-button {
+  position: absolute;
+  bottom: -30px;
+  left: 30%;
+}
+
+.animation-card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+}
+.animation-card:hover {
+  box-shadow: 15px 15px 30px #bebebe, 15px 15px 30px #ffffff, 15px 15px 30px #acacac inset, -15px -15px 30px #b6b6b6 inset;
+}
+
+@media (max-width: 568px) {
+  .loader {
+    display: none;
+  }
+  #projects .content .title {
+    font-size: 1.5em;
+  }
+}
+#contact {
+  background-color: rgb(33, 37, 41);
+  text-align: right;
+  border-top: 5px solid #dc4c36;
+  color: white;
+}
+
+.image {
+  width: 50%;
+  text-align: center;
+}
+.image img {
+  width: 100%;
+}
+
+.content-box {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content-box .contact-title-box {
+  width: 80%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: 0 auto;
+  min-width: 150px;
+}
+.content-box .contact-title-box h2 {
+  font-size: 2.2em;
+}
+.content-box .contact-title-box p {
+  font-weight: bold;
+}
+
+@keyframes formBG {
+  0% {
+    filter: blur(50px) hue-rotate(0deg);
+  }
+  100% {
+    filter: blur(50px) hue-rotate(360deg);
+  }
+}
+.form-box {
+  width: 100%;
+  position: relative;
+}
+
+.form-box form {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(31, 25, 28, 0.7);
+  border-radius: 50px;
+  margin: 0 auto;
+}
+.form-box form .filed-box {
+  width: 50%;
+  margin-top: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.form-box form .filed-box span {
+  color: #71ec8e;
+  font-weight: bold;
+}
+.form-box form .filed-box .input {
+  height: 40px;
+  font-size: 16pt;
+  color: #fff;
+  font-weight: bold;
+}
+.form-box form .filed-box .input, .form-box form .filed-box #textarea {
+  background: rgb(113, 180, 124);
+  border: none;
+  border-bottom: 4px solid rgb(195, 195, 195);
+}
+.form-box form button:hover {
+  background: rgba(222, 222, 222, 0.5882352941);
+}
+.form-box form .button_lg {
+  width: 100%;
+  background-color: rgba(198, 217, 158, 0.196);
+}
+
+
+
+footer {
+  border-top: 5px solid #6fe471;
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.footer-section {
+  margin: 0 10px;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  padding: 50px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 20px;
+}
+
+.footer-section ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  color: #fff;
+}
+.footer-section ul li a:hover {
+  color: #69e569;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-links li {
+  margin: 0 5px;
+}
+
+.social-links li a img {
+  width: 2em;
+}
+.social-links li a img:hover {
+  color: #d5ef62;
+}
+
+.copy {
+  font-size: 1.2rem;
+  color: #d1e561;
+}
+
