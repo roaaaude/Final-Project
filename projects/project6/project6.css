@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Assistant", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container .inner-container {
+  margin: 200px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 650px) {
+  .container .inner-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.container .inner-container .image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.title-container {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  text-align: center;
+  padding: 20px;
+  background-color: #8b008b;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title-container h1 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title-container p {
+  color: #f0f0f0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.form-container {
+  grid-column: 3/5;
+  grid-row: 4/7;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: right;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-container p {
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-container form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-container form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.form-container form input,
+.form-container form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  color: #333333;
+}
+
+.form-container form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #8b008b;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.form-container form button:hover {
+  background-color: #6b006b;
+}
+
+@media (max-width: 650px) {
+  .inner-container {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .title-container {
+    grid-column: 1/11;
+    grid-row: 1/2;
+  }
+
+  .form-container {
+    grid-column: 1/11;
+    grid-row: 5/6;
+  }
+}
