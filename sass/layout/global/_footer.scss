@@ -1,0 +1,38 @@
+footer {
+    border-top: $border;
+    color: $white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.quick-nav h4 {
+    font-size: 2em;
+    margin-bottom: 80px;
+    padding: 35px;
+
+}
+
+
+.social-links {
+    @include flex(flex, center, space-around);
+}
+
+.social-links li {
+    margin: 0 5px;
+
+}
+
+.social-links li a {
+    img {
+        width: 2em;
+
+        &:hover {
+            color: $border-color;
+        }
+    }
+}
+
+.copy {
+    font-size: 1.2rem;
+    color: $border-color;
+}

@@ -1,0 +1,13 @@
+#project-section {
+    background-color: #212529;
+
+    &>.project-picture-box {
+        width: 80%;
+        margin: auto;
+        padding: 100px 0;
+
+        & img {
+            width: 100%;
+        }
+    }
+}
