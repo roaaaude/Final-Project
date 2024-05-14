@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  font-size: 1.2em;
+  color: #ffffff;
+  background: #333333;
+}
+
+.grid-images-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  margin: 20px auto;
+}
+
+.grid-images-box img {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.social-box {
+  width: 100%;
+  grid-column: 1 / -1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-box .social-button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #ffcc00, #ff9900);
+  cursor: pointer;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-box .social-button img {
+  width: 30%;
+}
+
+.social-box .social-button:hover {
+  background: linear-gradient(to bottom, #ff9900, #ffcc00);
+  transform: scale(1.1);
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-size: cover;
+  background-image: url('https://source.unsplash.com/random/1920x1080');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container .logo {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.content-container .title-box {
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.content-container .title-box h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 20px 0;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content-container .title-box h2 {
+  font-size: 1.8em;
+  padding-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .grid-images-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content-container .logo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-images-box {
+    grid-template-columns: 1fr;
+  }
+
+  .content-container .logo {
+    width: 120px;
+  }
+
+  .content-container .title-box h1 {
+    font-size: 2em;
+  }
+
+  .content-container .title-box h2 {
+    font-size: 1.5em;
+  }
+}
