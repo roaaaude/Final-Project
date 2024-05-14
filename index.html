@@ -1,0 +1,351 @@
+<!--Roaa Saleh-->
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roaa Saleh</title>
+    <link rel="stylesheet" href="./sass/components/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./style/main-style/main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar  navbar-expand-lg bg-dark fixed-top">
+            <div class="profile-picture-box">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="images/profile.jpg" alt="Roaa Saleh">
+                </a>
+            </div>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" dir="ltr" id="navbarSupportedContent">
+                <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active link-light me-auto" aria-current="page" href="#main-section">בית</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#about" alt>עלינו</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#projects">פרויקטים</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#contact">ליצור קשר</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <!-- main section -->
+            <section id="main-section">
+
+                <div class="main-title-box">
+                    <h1 class="title">תיק עבודות</h1>
+                    <p class="description lead my-3"> התכוננו לגלות את העולם שלנו מלא ביצירתיות ומצוינות, וליהנות
+                        מחוויית
+                        גלישה בלתי נשכחת<span>!</span></p>
+                </div>
+
+                <div class="back-to-top">
+                    <a href="#top"></a>
+                </div>
+            </section>
+
+
+            <!-- Tools In Use -->
+            <section id="skills">
+                <img src="./images/powerImages/node-js.png" alt="Nodde.Js picture">
+                <img src="./images/powerImages/img-CSS.png" alt="CSS picture">
+                <img src="./images/powerImages/img-HTML.png" alt="HTML picture">
+                <img src="./images/powerImages/img-JS.png" alt="javascript picture">
+                <img src="./images/powerImages/img-Bootstrap.png" alt="Bootstrap picture">
+                <img src="./images/powerImages/database.png" alt="DB picture">
+                <img src="./images/powerImages/python.png" alt="Python picture">
+            </section>
+
+
+            <!-- About Section with detailed information -->
+            <section id="about">
+                <div class="profile-picture-box"></div>
+                <div class="about-content">
+                    <!-- Section Title -->
+                    <h2 class="title">מידע אישי</h2>
+                    
+                    <!-- Description of expertise and professional approach -->
+                    <p class="description lead pb-4">
+                        היי! אני מציעה ניסיון רחב בתחום הטכנולוגיה, עם מומחיות בפיתוח ממשקי משתמש, ניהול מערכות ופתרון בעיות טכניות בצורה חדשנית ויעילה.
+                    </p>
+                    <p class="description lead pb-4">
+                        היכולת שלי להתמודד עם מצבים טכניים מורכבים מאפשרת לי להציע פתרונות שמשדרגים את חוויית המשתמש ומעניקים ערך מוסף ללקוחותי.
+                    </p>
+                    <p class="description lead pb-4">
+                        עם ידע בתכנות ועיצוב גרפי, אני יכולה ליצור ממשקים דינמיים ומודרניים שמתאימים לדרישות היום.
+                    </p>
+                    
+                    <!-- Hidden content for additional information -->
+                    <div class="remaining-content" style="display: none;">
+                        <p class="description lead pb-4">
+                            יש לי גם ניסיון בפיתוח אפליקציות שולחן עבודה ומובייל, תוך שימוש בטכנולוגיות מתקדמות כמו Python ו- Flutter.
+                        </p>
+                        <p class="description lead pb-4">
+                            בתחום ניהול מסדי נתונים, אני מסוגלת לנהל מערכות מורכבות ולאופטימזציה של שאילתות לשיפור הביצועים והיעילות.
+                        </p>
+                        <p class="description lead pb-4">
+                            המומחיות שלי בתקשורת נתונים מקנה לי יכולת להתמודד עם פרויקטים בינלאומיים ולשפר את אינטגרציית המערכות.
+                        </p>
+                        <p class="description lead pb-4">
+                            אני מציעה שירותי התאמה אישית של תוכנה לפי צרכי העסק, מה שמבטיח חוויית שימוש יעילה ומותאמת לכל לקוח.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Button to Toggle Visibility of Additional Content -->
+                <button class="read-more-button button" onclick="toggleVisibility()">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">ראה פרטים נוספים</span>
+                    </span>
+                </button>
+                
+                <!-- Button to Download CV -->
+                <a href="https://pin.it/1W2lU2LNf" download="cv.doc">
+                    <button type="button" class="button">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">להוריד את הקורות</span>
+                        </span>
+                    </button>
+                </a>
+            </section>
+
+
+            <script src="./javascript/readmore.js"></script>
+
+            <!--  Adaptable Designs -->
+            <section id="projects">
+
+                <!--Leading projects-->
+                <div class="content">
+                    <h2 class="title">פרויקטים מובילים</h2>
+                    <p class="description pb-5">
+                        חקרו את אוסף הפרויקטים המרשימים שלי, המדגימים את היכולת שלי בעיצוב ופיתוח אתרים ואפליקציות. כל פרויקט משקף את התשוקה והמחויבות שלי לאיכות ולחדשנות.
+                    </p>
+                </div>                
+                
+
+                <div class="row cardy gap-1 d-flex justify-content-around my-5">
+                <!--Project 1 -->
+                <div class="card card1 animation-card col-xxs-6 col-xs-8 col-sm-12 col-lg-4 my-4" style="width: 25em;">
+                    <img src="./images/pages-images/project1.png" class="card-img-top"
+                        alt="Roaa Saleh">
+                    <div class="card-body">
+                        <h5 class="card-title">לחשוב מחוץ לקופסה</h5>
+                        <p class="lead pb-4" style="font-size: 1rem;">
+                            העמוד מעוצב להציג תכנים בצורה אטרקטיבית ונגישה, תוך ניצול יעיל של טכנולוגיות חדישות ופונקציונליות מודרנית, המבטיחה חווית גלישה חלקה עבור כל משתמשת ומשתמש.
+                        </p>
+                        <a href="./pages/project1.html" target="_blank">
+                            <button type="button" class="button">
+                                <span class="button_lg">
+                                    <span class="button_sl"></span>
+                                    <span class="button_text">לעמוד הפרויקט</span>
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <!--Project 2 -->
+                <div class="card card1 animation-card col-xxs-6 col-xs-8 col-lg-6 my-4" style="width: 25em;">
+                    <img src="./images/pages-images/project2.jpg" class="card-img-top" alt="Roaa Saleh dream-home">
+                    <div class="card-body">
+                        <h5 class="card-title">תן לנו לבנות את בית החלומות שלך</h5>
+                        <p class="lead pb-4" style="font-size: 1rem;">
+                            פותח להבטחת נגישות ונוחות מרבית בכל מכשיר, העמוד מספק עיצוב אינטואיטיבי שמותאם בצורה אידאלית לדרישות היום המודרניות. מערכת העיצוב מחדשת את חוויית המשתמשת ומגדירה מחדש את האינטראקציה עם התוכן.
+                        </p>
+                        <a href="./pages/project2.html" target="_blank">
+                            <button type="button" class="button">
+                                <span class="button_lg">
+                                    <span class="button_sl"></span>
+                                    <span the="button_text">לעמוד הפרויקט</span>
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <!--Project 3-->
+                <div class="card card1 animation-card col-xxs-6 col-xs-8 col-sm-12 col-lg-4 my-4"
+                    style="width: 25em;">
+                    <img src="./images/pages-images/project3.png" class="card-img-top"
+                        alt="Roaa Saleh project3-page">
+
+                    <div class="card-body">
+                        <h5 class="card-title">מתן ייעוץ ללא עלות</h5>
+                        <p class="lead pb-4" style="font-size: 1rem;">עמוד זה מוקדש לשירות ייעוץ ללא עלות, מציע תיאור קצר ומדויק של השירותים שניתנים. כולל טופס למילוי פרטים כמו שמך ומייל, כדי לאפשר יצירת קשר ישירה ומהירה. נוכחות אינטראקטיבית של סמלים ליצירת קשר מספקת גישה נוחה לשיחה או לשליחת פנייה. העיצוב הרספונסיבי של הדף מבטיח שהוא יתאים לכל מכשיר ומסך, מה שמעניק חוויית משתמש מעולה ומותאמת.</p>
+                        <a href="./pages/project3.html" target="_blank">
+                            <button type="button" class="button">
+                                <span class="button_lg">
+                                    <span class="button_sl"></span>
+                                    <span class="button_text">לעמוד הפרויקט</span>
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <div class="row gap-1 d-flex justify-content-around my-5">
+                    <!--Project 4-->
+                    <div class="card card1 animation-card col-xxs-6 col-xs-8 col-sm-12 col-lg-4 my-4"
+                        style="width: 25em;">
+                        <img src="./images/pages-images/project4.png" class="card-img-top img"
+                            alt="Roaa Saleh leading forward">
+
+                        <div class="card-body">
+                            <h5 class="card-title">מתווכים לעתיד שלך</h5>
+                            <p class="lead pb-4" style="font-size: 1rem;">העמוד מציע חוויה דינמית ואלגנטית למשתמשים, עם עיצוב מדויק שמבטיח התאמה מושלמת לכל סוגי המכשירים והמסכים. תוך שימת דגש על פונקציונליות מתקדמת, הדף מספק גישה חלקה ובלתי מוגבלת לכל התכנים, ומציע ממשק משתמש אינטואיטיבי שמעודד גלישה יעילה ונעימה.</p>
+                            <a href="pages/project4.html" target="_blank">
+                                <button type="button" class="button">
+                                    <span class="button_lg">
+                                        <span class="button_sl"></span>
+                                        <span class="button_text">לעמוד הפרויקט</span>
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Project 5-->
+                    <div class="card card1 animation-card col-xxs-6 col-xs-8 col-sm-12 col-lg-4 my-4"
+                        style="width: 25em;">
+                        <img src="./images/pages-images/project5.png" class="card-img-top"
+                            alt="Roaa Saleh">
+
+
+                        <div class="card-body">
+                            <h5 class="card-title">קפה טוב לבוקר</h5>
+                            <p class="lead pb-4" style="font-size: 1rem;">"העמוד תוכנן בצורה שמאפשרת חוויית משתמש חלקה
+                                ונעימה לכל סוגי
+                                המסכים. בעת פתיחת העמוד במסך גדול, האיזור הימני מוקדש
+                                לתמונה גדולה ומרשימה של הקפה, יחד עם טופס ההרשמה המצורף. זאת מבטה את עיצוב העמוד ומאפשרת
+                                למשתמש למלא את הפרטים בקלות.
+                                במקביל, ככל שגודל המסך קטן יותר, העיצוב מתאים את עצמו בהתאם: התמונה נמזגת ומתאימה לגודל
+                                המסך
+                                והטופס מסודר בצורה יעילה
+                                יותר על מנת לשמור על נוחות המשתמש ולהקל עליו במילוי הפרטים. בכך, העמוד מספק חוויה
+                                איכותית
+                                ונעימה למשתמשים מכל סוגי
+                                המסכים והמכשירים."
+                            </p>
+                            <a href="./pages/project5.html" target="_blank">
+                                <button type="button" class="button">
+                                    <span class="button_lg">
+                                        <span class="button_sl"></span>
+                                        <span class="button_text">לעמוד הפרויקט</span>
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Project 6-->
+                    <div class="card card1 animation-card col-xxs-6 col-xs-8 col-sm-12 col-lg-4 my-4"
+                        style="width: 25em;">
+                        <img src="./images/pages-images/project6.png" class="card-img-top">
+
+
+                        <div class="card-body">
+                            <h5 class="card-title">תראה את העולם מקרוב</h5>
+                            <p class="lead pb-4" style="font-size: 1rem;">עמוד זה מהווה דוגמה מושלמת לשילוב של אלגנטיות
+                                ופונקציונליות בעיצוב
+                                אתרים, תוך שימוש בפונט "Assistant" המאפשר קריאה נעימה
+                                וצבעים מרהיבים המרגיעים את העין. ההיענות שלו לכל גדלי המסכים, מה שהופך את חווית המשתמש
+                                לחלקה.
+                                מקפיד על האיכות הגבוהה והאינטראקטיביות, מציע איזון מרשים בין עיצוב ופונקציונליות.</p>
+                            <a href="./pages/project6.html" target="_blank">
+                                <button type=" button" class="button">
+                                    <span class="button_lg">
+                                        <span class="button_sl"></span>
+                                        <span class="button_text">לעמוד הפרויקט</span>
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- don't hesitate to contact us if you have any question -->
+            <section id="contact" class="d-flex ">
+                <div class="content-box">
+                    <div class="contact-title-box">
+                        <h2 class="title">זמינים לך לכל שאלה או הצעה - פשוט יצירת קשר!</h2>
+                        <p class="description lead">
+                            אם יש לך רעיון לפרויקט חדש או שתרצה לשפר פרויקט קיים, אנו כאן לעזור!! אל תהסס להישאר בקשר ... ונענה בהקדם עם כל התמיכה שתדרש.
+                        </p>
+                    </div>                    
+                    <div class="form-box">
+                        <form>
+                            <div class="mb-3 filed-box">
+                                <label for="fullname"><span>* </span>שמך</label>
+                                <input type="text" id="fullname" autocomplete="given-name" class="input name" required>
+                            </div>
+                            <div class="mb-3 filed-box">
+                                <label for="your-email"><span>* </span>מייל</label>
+                                <input type="email" id="your-email" autocomplete="off" class="input email" required>
+                            </div>
+                            <div class="mb-3 filed-box">
+                                <label for="phone-number"><span>* </span>טלפון</label>
+                                <input type="tel" id="phone-number" autocomplete="off" class="input phone" required>
+                            </div>
+                            <div class="mb-3 filed-box">
+                                <label for="textarea">הודעה</label>
+                                <textarea id="textarea" cols="30" rows="5"></textarea>
+
+                                <button type="submit" class=" btn">
+                                    <span class="button_lg">
+                                        <span class="button_sl"></span>
+                                        <span class="button_text">שלח</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./images/box.png" alt="">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark">
+        <div class="quick-links-section">
+            <h3>קישורים מהירים</h3>
+            <ul class="quick-nav">
+                <li><a href="#about">מי אנחנו</a></li>
+                <li><a href="#projects">השירותים</a></li>
+                <li><a href="#projects">הפרויקטים</a></li>
+                <li><a href="#contact">יצירת קשר</a></li>
+            </ul>
+        </div>
+        
+    
+        <div class="connect-section">
+            <h3>תשאר מחובר</h3>
+            <ul class="connect-icons">
+                <li>
+                    <a href="Phone:+972-52-748-5255">
+                        <img src="./images/contact-us/phone-icon.png" width="25" height="25">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./javascript/bootstrap.min.js"></script>
+</body>
+
+</html>
